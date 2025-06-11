@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해율푸드 행운의 룰렛!</title>
+    <!-- 웹폰트 넥슨고딕체 추가 -->
+    <link href="https://webfontworld.github.io/nexon/NexonGothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 메인 컨테이너 -->
+    <div class="container">
+        <!-- 게임 제목 -->
+        <h1>해율푸드 행운의 룰렛!</h1>
+        <p class="subtitle">버튼을 눌러 행운을 가져가세요</p>
+
+        <!-- 룰렛 섹션 -->
+        <div class="roulette-section">
+            <!-- 룰렛 원판 -->
+            <div class="roulette-wheel">
+                <div class="wheel-container">
+                    <!-- 룰렛 항목들 -->
+                    <div class="wheel-item" style="--i:1; --clr:#FF3B30;"><span>만두 2 알</span></div>
+                    <div class="wheel-item" style="--i:2; --clr:#FF9500;"><span>10% 할인</span></div>
+                    <div class="wheel-item" style="--i:3; --clr:#FFCC00;"><span>미니샐러드</span></div>
+                    <div class="wheel-item" style="--i:4; --clr:#34C759;"><span>음료수 한잔</span></div>
+                    <div class="wheel-item" style="--i:5; --clr:#007AFF;"><span>무료 커피</span></div>
+                    <div class="wheel-item" style="--i:6; --clr:#AF52DE;"><span>꽝, 한번더!</span></div>
+                </div>
+                <!-- 룰렛 포인터 -->
+                <div class="pointer"></div>
+            </div>
+
+            <!-- 결과 표시 영역 -->
+            <div class="result-display">
+                <h2 id="result-text">행운을 기다리는 중...</h2>
+            </div>
+
+            <!-- 시작 버튼 -->
+            <button id="spin-button">시작</button>
+        </div>
+    </div>
+
+    <!-- 폭죽 효과를 위한 캔버스 -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
